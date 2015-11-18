@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XYPieChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -27,7 +32,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1E4170C309D20A1AB063479AAC781B25</key>
+		<key>3F11A57D8C4A2EDCDBDB139002FCF8AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>606E46920998EA51D279E2565BDFAA45</key>
 		<dict>
 			<key>primary</key>
 			<true/>

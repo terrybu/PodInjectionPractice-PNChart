@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6341E03E7A3B82217C8BFEB2'
-               BlueprintName = 'Pods-PNPieChartInjectionPractice'
+               BlueprintIdentifier = 'C22B7A435445EFA09CE8D1EC'
+               BlueprintName = 'XYPieChart'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_PNPieChartInjectionPractice.framework'>
+               BuildableName = 'XYPieChart.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C2C35648A3DF509B3DE1C340 /* Pods_PNPieChartInjectionPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67E31277A17CC584B7AA9AC /* Pods_PNPieChartInjectionPractice.framework */; };
 		D9CC48C01BFD13BC0085F145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC48BF1BFD13BC0085F145 /* AppDelegate.swift */; };
-		D9CC48C21BFD13BC0085F145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC48C11BFD13BC0085F145 /* ViewController.swift */; };
+		D9CC48C21BFD13BC0085F145 /* PNChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC48C11BFD13BC0085F145 /* PNChartViewController.swift */; };
 		D9CC48C51BFD13BC0085F145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CC48C31BFD13BC0085F145 /* Main.storyboard */; };
 		D9CC48C71BFD13BC0085F145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CC48C61BFD13BC0085F145 /* Assets.xcassets */; };
 		D9CC48CA1BFD13BC0085F145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CC48C81BFD13BC0085F145 /* LaunchScreen.storyboard */; };
+		D9CC48D51BFD27A10085F145 /* XYPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC48D41BFD27A10085F145 /* XYPieChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9CC48BC1BFD13BC0085F145 /* PNPieChartInjectionPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNPieChartInjectionPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CC48BF1BFD13BC0085F145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9CC48C11BFD13BC0085F145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9CC48C11BFD13BC0085F145 /* PNChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNChartViewController.swift; sourceTree = "<group>"; };
 		D9CC48C41BFD13BC0085F145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9CC48C61BFD13BC0085F145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9CC48C91BFD13BC0085F145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9CC48CB1BFD13BC0085F145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9CC48D11BFD141E0085F145 /* PNPieChartInjectionPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNPieChartInjectionPractice-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9CC48D41BFD27A10085F145 /* XYPieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYPieChartViewController.swift; sourceTree = "<group>"; };
 		E0709C82D75BA8E8791CF680 /* Pods-PNPieChartInjectionPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNPieChartInjectionPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNPieChartInjectionPractice/Pods-PNPieChartInjectionPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		E67E31277A17CC584B7AA9AC /* Pods_PNPieChartInjectionPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNPieChartInjectionPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFD742F084416AE45C9835B /* Pods-PNPieChartInjectionPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNPieChartInjectionPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNPieChartInjectionPractice/Pods-PNPieChartInjectionPractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				D9CC48BF1BFD13BC0085F145 /* AppDelegate.swift */,
-				D9CC48C11BFD13BC0085F145 /* ViewController.swift */,
+				D9CC48D41BFD27A10085F145 /* XYPieChartViewController.swift */,
+				D9CC48C11BFD13BC0085F145 /* PNChartViewController.swift */,
 				D9CC48C31BFD13BC0085F145 /* Main.storyboard */,
 				D9CC48C61BFD13BC0085F145 /* Assets.xcassets */,
 				D9CC48C81BFD13BC0085F145 /* LaunchScreen.storyboard */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9CC48C21BFD13BC0085F145 /* ViewController.swift in Sources */,
+				D9CC48D51BFD27A10085F145 /* XYPieChartViewController.swift in Sources */,
+				D9CC48C21BFD13BC0085F145 /* PNChartViewController.swift in Sources */,
 				D9CC48C01BFD13BC0085F145 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

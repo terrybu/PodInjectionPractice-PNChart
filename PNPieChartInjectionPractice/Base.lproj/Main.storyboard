@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f7g-Pv-K7A">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PNCHART-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PNPieChartInjectionPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PNChartViewController" customModule="PNPieChartInjectionPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,12 +33,81 @@
                             <constraint firstItem="SF2-3Y-bfI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zno-dP-eX4"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="PNCHART" id="9he-Wy-i0t"/>
                     <connections>
                         <outlet property="changeButton" destination="SF2-3Y-bfI" id="jbH-Dv-VAT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="563" y="1071"/>
+        </scene>
+        <!--XYPieChart-->
+        <scene sceneID="HFn-fs-QFz">
+            <objects>
+                <viewController id="x9O-HK-u32" customClass="XYPieChartViewController" customModule="PNPieChartInjectionPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RrS-BQ-Rc1"/>
+                        <viewControllerLayoutGuide type="bottom" id="NVQ-mK-fsi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vhR-Q6-yI7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Z4-gj-Xqg" customClass="XYPieChart">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="RBI-qG-M4e"/>
+                                    <constraint firstAttribute="height" constant="300" id="eP3-gz-U1U"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tY-sc-uTi">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPress" destination="x9O-HK-u32" eventType="touchUpInside" id="fVe-tF-dNR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Z4-gj-Xqg" firstAttribute="centerX" secondItem="vhR-Q6-yI7" secondAttribute="centerX" id="SO5-eJ-jGa"/>
+                            <constraint firstItem="0tY-sc-uTi" firstAttribute="leading" secondItem="vhR-Q6-yI7" secondAttribute="leadingMargin" id="T4R-V6-Ddq"/>
+                            <constraint firstItem="0tY-sc-uTi" firstAttribute="top" secondItem="RrS-BQ-Rc1" secondAttribute="bottom" id="X8r-xh-AOo"/>
+                            <constraint firstItem="9Z4-gj-Xqg" firstAttribute="centerY" secondItem="vhR-Q6-yI7" secondAttribute="centerY" id="hzW-wT-UvN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="XYPieChart" id="BXm-Ab-5XL"/>
+                    <connections>
+                        <outlet property="pieChart" destination="9Z4-gj-Xqg" id="QRN-gr-p4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JgT-gg-euz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="326"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="C74-gF-r8t">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="f7g-Pv-K7A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="d3a-7N-bLH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x9O-HK-u32" kind="relationship" relationship="viewControllers" id="hyA-gI-TJU"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lLx-kF-Gtr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8b-y3-yh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="725"/>
         </scene>
     </scenes>
 </document>

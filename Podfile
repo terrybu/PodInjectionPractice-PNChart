@@ -6,6 +6,7 @@ use_frameworks!
 target 'PNPieChartInjectionPractice' do
 
 	pod 'PNChart'
+    pod 'XYPieChart'
 
 end
 

@@ -2,12 +2,15 @@ PODS:
   - PNChart (0.8.7):
     - UICountingLabel (~> 1.2.0)
   - UICountingLabel (1.2.0)
+  - XYPieChart (0.2)
 
 DEPENDENCIES:
   - PNChart
+  - XYPieChart
 
 SPEC CHECKSUMS:
   PNChart: c1755716bbd45386d2035b2bf2ce73e6d3f8cb22
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  XYPieChart: 0efd8069d26c25d20ab74c01b5ad455f1fc48153
 
 COCOAPODS: 0.39.0

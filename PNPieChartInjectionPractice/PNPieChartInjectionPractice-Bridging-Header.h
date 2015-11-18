@@ -4,3 +4,4 @@
 
 
 #import <PNChart/PNChart.h>
+#import <XYPieChart/XYPieChart.h>
